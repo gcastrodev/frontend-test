@@ -11,33 +11,62 @@
 <body>
     <header>
         <h1>Personal Finance</h1>
-        <h6>by Gabriel Castro</h6>
-        <h2>Organizando sua vida financeira desde 2026</h2>
+        <p class="autor">by Gabriel Castro</p>
+        <p class="subtitulo">Organizando sua vida financeira desde 2026</p>
     </header>
     <main>
-        <form>
-            <label for="income">Descrição:</label>
-            <input type="text" id="income" name="income" required><br><br>
+        <section class="formulario">
+      <h2>Registrar Gasto</h2>
+      <form id="form-gasto">
+        <div class="campo">
+          <label for="descricao">Descrição</label>
+          <input type="text" id="descricao" placeholder="Ex: Almoço" required>
+        </div>
+        <div class="campo">
+          <label for="valor">Valor (R$)</label>
+          <input type="number" id="valor" placeholder="0,00" min="0.01" step="0.01" required>
+        </div>
+        <div class="campo">
+          <label for="categoria">Categoria</label>
+          <select id="categoria">
+            <option value="habitacao">Habitação</option>
+            <option value="alimentacao">Alimentação</option>
+            <option value="utilidades">Utilidades Domésticas</option>
+            <option value="transporte">Transporte</option>
+            <option value="lazer">Lazer</option>
+            <option value="saude">Saúde</option>
+            <option value="educacao">Educação</option>
+          </select>
+        </div>
+        <button type="submit">Registrar Gasto</button>
+      </form>
+    </section>
 
-            <label for="expenses">Valor:</label>
-            <input type="number" id="expenses" name="expenses" required><br><br>
+    <section class="painel">
+      <h2>Gastos do Mês</h2>
 
-            <label for="type">Categoria</label>
-            <select name="type" id="type">
-                <option value="income">Habitação</option>
-                <option value="expense">Alimentação</option>
-                <option value="">Utilidades Domesticas</option>
-                <option value="">Transporte</option>
-                <option value="">Lazer</option>
-                <option value="">Saúde</option>
-                <option value="">Educação</option>
-            </select><br><br>
-            <button type="submit">Registrar Gasto</button>
-        </form>
-        <section>
-            <h3>Sobre o Projeto</h3>
-            <p>Este projeto é de uma avaliação da disciplina de frontend para a turma do 3° semestre na UNICESUMAR CAMPUS LONDRINA</p>
-        </section>
+      <div class="total-box">
+        <span>Total gasto:</span>
+        <strong id="total">R$ 0,00</strong>
+      </div>
+
+      <table id="tabela-gastos">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Categoria</th>
+            <th>Valor</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody id="lista-gastos">
+          <!-- JS -->
+        </tbody>
+      </table>
+
+      <p id="msg-vazia">Nenhum gasto registrado ainda.</p>
+
+    </section>
     </main>
     <footer>
         <a href="https://github.com/gcastrodev" target="_blank">GitHub</a>
