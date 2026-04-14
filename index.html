@@ -15,10 +15,34 @@
         <h2>Organizando sua vida financeira desde 2026</h2>
     </header>
     <main>
+        <form>
+            <label for="income">Descrição:</label>
+            <input type="text" id="income" name="income" required><br><br>
+
+            <label for="expenses">Valor:</label>
+            <input type="number" id="expenses" name="expenses" required><br><br>
+
+            <label for="type">Categoria</label>
+            <select name="type" id="type">
+                <option value="income">Habitação</option>
+                <option value="expense">Alimentação</option>
+                <option value="">Utilidades Domesticas</option>
+                <option value="">Transporte</option>
+                <option value="">Lazer</option>
+                <option value="">Saúde</option>
+                <option value="">Educação</option>
+            </select><br><br>
+            <button type="submit">Registrar Gasto</button>
+        </form>
         <section>
             <h3>Sobre o Projeto</h3>
             <p>Este projeto é de uma avaliação da disciplina de frontend para a turma do 3° semestre na UNICESUMAR CAMPUS LONDRINA</p>
         </section>
     </main>
+    <footer>
+        <a href="https://github.com/gcastrodev" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/gabriel-castro-b39b50358/" target="_blank">LinkedIn</a>
+        <p>&copy; 2023 Personal Finance. Todos os direitos reservados.</p>
+    </footer>
 </body> 
 </html>
