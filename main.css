@@ -58,13 +58,13 @@ h2 {
 }
 
 #form-gasto {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 14px;
 }
 
 #form-gasto button {
-  grid-column: 1 / -1;
+  align-self: flex-end;
 }
 
 .campo {
@@ -233,13 +233,12 @@ footer a:hover {
 
 /* ── melhorando a responsividade ── */
 @media (min-width: 600px) {
-  .form-gasto {
+  #form-gasto {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 14px;
   }
 
-  .form-gasto button {
+  #form-gasto button {
     grid-column: 1 / -1;
   }
 
