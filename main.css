@@ -57,10 +57,14 @@ h2 {
     padding-bottom: 8px;
 }
 
-.form-gasto {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+#form-gasto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+#form-gasto button {
+  grid-column: 1 / -1;
 }
 
 .campo {
