@@ -177,6 +177,23 @@ tbody tr:hover {
   padding: 20px 0;
 }
 
+/* botao editar */
+.btn-editar {
+  background: none;
+  border: 1px solid #64b5f6;
+  color: #64b5f6;
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-editar:hover {
+  background-color: #64b5f6;
+  color: white;
+}
+
 /* ── botão excluir ── */
 .btn-excluir {
   background: none;
