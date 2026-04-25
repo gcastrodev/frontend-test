@@ -75,8 +75,10 @@ function renderizar() {
         <td>${gasto.categoria}</td>
         <td>${new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(gasto.valor)}</td>
         <td>
-        <button class="btn-editar" data-id="${gasto.id}">Editar</button>
-        <button class="btn-excluir" data-id="${gasto.id}">Excluir</button>
+        <div class="acoes-celula">
+        <button type="button" class="btn-editar" data-id="${gasto.id}">Editar</button>
+        <button type="button" class="btn-excluir" data-id="${gasto.id}">Excluir</button>
+        </div>
         </td>
     `
 
@@ -297,8 +299,10 @@ function adicionarFiltroCategoria() {
                 <td>${gasto.categoria}</td>
                 <td>${new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(gasto.valor)}</td>
                 <td>
-                    <button class="btn-editar" data-id="${gasto.id}">Editar</button>
-                    <button class="btn-excluir" data-id="${gasto.id}">Excluir</button>
+                    <div class="acoes-celula">
+                    <button type="button" class="btn-editar" data-id="${gasto.id}">Editar</button>
+                    <button type="button" class="btn-excluir" data-id="${gasto.id}">Excluir</button>
+                    </div>
                 </td>
             `;
             lista.appendChild(linha);
