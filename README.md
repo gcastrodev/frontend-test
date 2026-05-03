@@ -1,6 +1,6 @@
 # Personal Finance App
 
-Aplicação web simples e eficiente para controle de gastos pessoais, desenvolvida como parte de uma avaliação prática de Front-end.
+Aplicação web simples e eficiente para controle de gastos pessoais, desenvolvida como parte de uma avaliação prática de Front-end. (nota alcançada 10/10)
 
 ---
 
